@@ -1,0 +1,109 @@
+.topSection {
+    position: relative; /* Change to relative */
+  }
+  
+  .topSection img {
+    width: 100vw;
+    height: 70vh;
+    z-index: -1; /* Ensure the image is behind the heading */
+    object-fit: cover; /* Ensures the image scales properly */
+  }
+  
+  .heading {
+    position: absolute;
+    top: 50%;
+    font-size: clamp(2.5vw, 7vw, 3rem); 
+    border-color: rgb(223, 223, 230);
+    background-color: transparent;
+    backdrop-filter: blur(5px); 
+    border-width: 1vw;
+    font-family: Roboto;
+    font-weight: 600;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  /* Styling the buttons */
+  .buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+; /* Center the buttons horizontally */
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .bg button {
+    background-color: black;
+    color: white;
+    padding: 7px 30px;
+    margin: 10px;
+    border: none; /* Remove borders */
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bg button:hover {
+    background-color: #333; /* Darker background on hover */
+  }
+  
+  .wrapper {
+    margin-top: 0vh; /* Move the wrapper below the banner */
+    padding: 20px;
+    color: #0b5394;
+  }
+  
+  .accordion {
+   
+    margin: 0 auto; /* Center the accordion */
+  }
+  .item h1{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9; /* Background color for clarity */
+    border-bottom: 1px solid #ccc; /* Separate each title */
+  }
+h3{
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  color: white;
+  border-color: #ebecee;
+  border-width: 2px;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  right: 0;
+  cursor: pointer;
+
+}
+  .content {
+   cursor: pointer;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 10px;
+
+  }
+  
+  .content.show {
+    max-height: 500px; /* Adjust for content */
+    padding: 10px;
+    transition: max-height 0.5s ease;
+  }
+  .content ul li {
+    list-style:square;
+    margin-left: 29px;
+  }
+  
